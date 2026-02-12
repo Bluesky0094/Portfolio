@@ -1,0 +1,356 @@
+﻿[site]
+title = "Stefano Caccamo - Graphic Designer and Video Editor"
+description = "Portfolio di grafica, stampa, eventi e video."
+language = "it"
+base_url = "https://example.com"
+accent_color = "#483f99"
+font = "Montserrat"
+font_heading = "Poppins"
+
+[hero]
+name = "Stefano Caccamo"
+role = "Graphic Designer and Video Editor"
+tagline = "Grafica + stampa + eventi + video"
+
+[cta]
+primary_label = "Vedi progetti"
+primary_href = "/src/pages/index.html"
+secondary_label = "Leggi CV"
+secondary_href = "/src/media/cv/CV Boma.pdf"
+video_label = "Video portfolio"
+video_href = "https://www.creativecuts.work"
+
+[paths]
+media_assets_dir = "../../src/media"
+site_output_dir = "../.."
+site_assets_dir = "src/media"
+
+[[nav]]
+label = "Home"
+href = "/index.html"
+
+[[nav]]
+label = "Progetti"
+href = "/src/pages/index.html"
+
+[[nav]]
+label = "About"
+href = "/src/pages/about.html"
+
+[[nav]]
+label = "Contatti"
+href = "/src/pages/contact.html"
+
+[contact]
+email = "stef.ccc@outlook.com"
+phone = "3478349694"
+city = ""
+
+[social]
+behance = "https://behance.net/username"
+instagram = "https://instagram.com/username"
+linkedin = "https://linkedin.com/in/username"
+
+# Use group to accorpare progetti simili quando renderizzi la griglia.
+[[projects]]
+slug = "bar-giannone"
+title = "Bar Giannone"
+category = "Branding / Social / Eventi"
+year = 2025
+group = "Eventi"
+featured = true
+source_dir = "Bar Giannone"
+cover = "/src/media/Bar Giannone/MockUp/Mockup PIZZA BOX 1.jpg"
+assets = [
+  "/src/media/Bar Giannone/MockUp/Mockup PIZZA BOX 1.jpg",
+  "/src/media/Bar Giannone/MockUp/Mug_Mockup_1.png",
+  "/src/media/Bar Giannone/Eventi/04/Live Music Instagram Post.png",
+  "/src/media/Bar Giannone/Eventi/04/Live Music Instagram Story.png"
+]
+
+[[projects]]
+slug = "friginfest"
+title = "FriginFest"
+category = "Evento / Branding"
+year = 2025
+group = "Eventi"
+featured = true
+source_dir = "FriginFest"
+cover = "/src/media/FriginFest/Square post/Post.png"
+assets = [
+  "/src/media/FriginFest/Square post/Post.png",
+  "/src/media/FriginFest/Mockups/Mockup.png",
+  "/src/media/FriginFest/Vertical Story/main event storia.png",
+  "/src/media/FriginFest/Carousell/Artboard 1.png"
+]
+
+[[projects]]
+slug = "vero-social"
+title = "Vero Social"
+category = "Preventivo / Social"
+year = 2025
+group = "Social"
+featured = false
+source_dir = "Vero Social"
+cover = "/src/media/Vero Social/Prezzario.pdf"
+assets = [
+  "/src/media/Vero Social/Prezzario.pdf",
+  "/src/media/Vero Social/BG.svg",
+  "/src/media/Vero Social/BG copy.svg",
+  "/src/media/Vero Social/Icona.svg"
+]
+
+[[projects]]
+slug = "business-card"
+title = "Business Card"
+category = "Stampa / Branding"
+year = 2025
+group = "Branding"
+featured = false
+source_dir = "Business Card"
+cover = "/src/media/Business Card/Front.pdf"
+assets = [
+  "/src/media/Business Card/Front.pdf",
+  "/src/media/Business Card/Retro.pdf"
+]
+
+[[collections]]
+slug = "event-flyer"
+title = "Event Flyer"
+category = "Eventi / Social"
+year = 2025
+group = "Eventi"
+cover = "/src/media/Event flyer/Torre palazzelle/Social Post.png"
+items = [
+  {
+    slug = "event-flyer-certo-bistro"
+    title = "Certo Bistro"
+    source_dir = "Event flyer/Certo Bistro"
+    cover = "/src/media/Event flyer/Certo Bistro/1 Maggio/Post.png"
+    assets = [
+      "/src/media/Event flyer/Certo Bistro/1 Maggio/Post.png",
+      "/src/media/Event flyer/Certo Bistro/1 Maggio/Storie.png",
+      "/src/media/Event flyer/Certo Bistro/2 Giugno/Post.png",
+      "/src/media/Event flyer/Certo Bistro/2 Giugno/Story.png",
+      "/src/media/Event flyer/Certo Bistro/Mexican Party/Mexican Party2.png"
+    ]
+  },
+  {
+    slug = "event-flyer-forma-accademy"
+    title = "Forma Accademy"
+    source_dir = "Event flyer/Forma Accademy"
+    cover = "/src/media/Event flyer/Forma Accademy/Formazione 2025.png"
+    assets = [
+      "/src/media/Event flyer/Forma Accademy/Formazione 2025.png",
+      "/src/media/Event flyer/Forma Accademy/Forma Academy.png"
+    ]
+  },
+  {
+    slug = "event-flyer-naval-steel"
+    title = "Naval Steel"
+    source_dir = "Event flyer/Naval Steel"
+    cover = "/src/media/Event flyer/Naval Steel/Naval Steel.png"
+    assets = [
+      "/src/media/Event flyer/Naval Steel/Naval Steel.png",
+      "/src/media/Event flyer/Naval Steel/Job Post (Eletricista - Idraulico).png",
+      "/src/media/Event flyer/Naval Steel/Job Post (Site Manager - Magazziniere).png",
+      "/src/media/Event flyer/Naval Steel/Targhetta.pdf"
+    ]
+  },
+  {
+    slug = "event-flyer-torneo-di-calcio"
+    title = "Torneo di Calcio"
+    source_dir = "Event flyer/Torneo di Calcio"
+    cover = "/src/media/Event flyer/Torneo di Calcio/PNG/Post.png"
+    assets = [
+      "/src/media/Event flyer/Torneo di Calcio/PNG/Logo.png",
+      "/src/media/Event flyer/Torneo di Calcio/PNG/Post.png",
+      "/src/media/Event flyer/Torneo di Calcio/PNG/Story.png",
+      "/src/media/Event flyer/Torneo di Calcio/PNG/Tabellone.png",
+      "/src/media/Event flyer/Torneo di Calcio/PNG/Fasi finali brakets.png",
+      "/src/media/Event flyer/Torneo di Calcio/PNG/Semifinale brekets.png"
+    ]
+  },
+  {
+    slug = "event-flyer-torre-palazzelle"
+    title = "Torre palazzelle"
+    source_dir = "Event flyer/Torre palazzelle"
+    cover = "/src/media/Event flyer/Torre palazzelle/Social Post.png"
+    assets = [
+      "/src/media/Event flyer/Torre palazzelle/Social Post.png",
+      "/src/media/Event flyer/Torre palazzelle/Social story.png"
+    ]
+  }
+]
+
+[[collections]]
+slug = "amazon-kdp"
+title = "Amazon KDP"
+category = "Impaginazione / Mockup"
+year = 2022
+group = "Editoriale"
+cover = "/src/media/Amazon KDP/7x Book Cover mockup.png"
+items = [
+  {
+    slug = "amazon-kdp-genealogy"
+    title = "Genealogy"
+    source_dir = "Amazon KDP/Genealogy"
+    cover = "/src/media/Amazon KDP/Genealogy/Covers/Hardcover.pdf"
+    assets = [
+      "/src/media/Amazon KDP/Genealogy/Covers/Hardcover.pdf",
+      "/src/media/Amazon KDP/Genealogy/Covers/Hardcover (1).pdf",
+      "/src/media/Amazon KDP/Genealogy/Covers/Hardcover (2).pdf",
+      "/src/media/Amazon KDP/Genealogy/Covers/Hardcover (3).pdf",
+      "/src/media/Amazon KDP/Genealogy/Interior/Interior Custom 2.pdf"
+    ]
+  },
+  {
+    slug = "amazon-kdp-password-book"
+    title = "Password Book"
+    source_dir = "Amazon KDP/Password Book"
+    cover = "/src/media/Amazon KDP/Password Book/Covers/v2.0.pdf"
+    assets = [
+      "/src/media/Amazon KDP/Password Book/Covers/v2.0.pdf",
+      "/src/media/Amazon KDP/Password Book/Covers/Black Cover Damn.pdf",
+      "/src/media/Amazon KDP/Password Book/Covers/Quaderno password stamp.pdf",
+      "/src/media/Amazon KDP/Password Book/Covers/What The Fuck is My Password Yellow.pdf",
+      "/src/media/Amazon KDP/Password Book/Covers/What's my Damn Password.pdf",
+      "/src/media/Amazon KDP/Password Book/Interior/Interior v2.0.pdf"
+    ]
+  },
+  {
+    slug = "amazon-kdp-trading-logbook"
+    title = "Trading logbook"
+    source_dir = "Amazon KDP/Trading logbook"
+    cover = "/src/media/Amazon KDP/Trading logbook/Cover/Hardcover.pdf"
+    assets = [
+      "/src/media/Amazon KDP/Trading logbook/Cover/Hardcover.pdf",
+      "/src/media/Amazon KDP/Trading logbook/Cover/Paperback.pdf",
+      "/src/media/Amazon KDP/Trading logbook/Interior/Paperback.pdf"
+    ]
+  }
+]
+
+[[collections]]
+slug = "menu-design"
+title = "Menu Design"
+category = "Impaginazione / Stampa"
+year = 2025
+group = "Editoriale"
+cover = "/src/media/Menu Design/Friends Bar/PNG/Menu.png"
+items = [
+  {
+    slug = "menu-design-certo-bistro"
+    title = "Certo Bistro"
+    source_dir = "Menu Design/Certo Bistro"
+    cover = "/src/media/Menu Design/Certo Bistro/SVG/Exterior.svg"
+    assets = [
+      "/src/media/Menu Design/Certo Bistro/SVG/Exterior.svg",
+      "/src/media/Menu Design/Certo Bistro/SVG/Interior.svg"
+    ]
+  },
+  {
+    slug = "menu-design-ellepi"
+    title = "EllePi"
+    source_dir = "Menu Design/EllePi"
+    cover = "/src/media/Menu Design/EllePi/Menu Cartaceo.pdf"
+    assets = [
+      "/src/media/Menu Design/EllePi/Menu Cartaceo.pdf",
+      "/src/media/Menu Design/EllePi/Menu elle pi 2025.pdf"
+    ]
+  },
+  {
+    slug = "menu-design-friends-bar"
+    title = "Friends Bar"
+    source_dir = "Menu Design/Friends Bar"
+    cover = "/src/media/Menu Design/Friends Bar/PNG/Menu.png"
+    assets = [
+      "/src/media/Menu Design/Friends Bar/PNG/Menu.png",
+      "/src/media/Menu Design/Friends Bar/PNG/Orari di apertura.png"
+    ]
+  }
+]
+
+[[collections]]
+slug = "presentazioni"
+title = "Presentazioni"
+category = "Presentazioni / Social"
+year = 2026
+group = "Social"
+cover = "/src/media/Presentazioni/Food Jean Paul/Dessert.png"
+items = [
+  {
+    slug = "presentazioni-food-jean-paul"
+    title = "Food Jean Paul"
+    source_dir = "Presentazioni/Food Jean Paul"
+    cover = "/src/media/Presentazioni/Food Jean Paul/Dessert.png"
+    assets = [
+      "/src/media/Presentazioni/Food Jean Paul/Dessert.png",
+      "/src/media/Presentazioni/Food Jean Paul/Street Food.png",
+      "/src/media/Presentazioni/Food Jean Paul/Kinapky.png",
+      "/src/media/Presentazioni/Food Jean Paul/Primi e Secondi copy.png"
+    ]
+  },
+  {
+    slug = "presentazioni-spighe-e-fenicotteri"
+    title = "Spighe e Fenicotteri"
+    source_dir = "Presentazioni/Spighe  e fenicotteri"
+    cover = "/src/media/Presentazioni/Spighe  e fenicotteri/Proposta gestione social Spighe e Fenicotteri.pdf"
+    assets = [
+      "/src/media/Presentazioni/Spighe  e fenicotteri/Proposta gestione social Spighe e Fenicotteri.pdf"
+    ]
+  }
+]
+
+[[collections]]
+slug = "sicuri-online"
+title = "Sicuri Online"
+category = "Social / Branding"
+year = 2025
+group = "Social"
+cover = "/src/media/Sicuri Online/IG post/Post 1/Post 1-1.png"
+items = [
+  {
+    slug = "sicuri-online-ig-post"
+    title = "IG Post"
+    source_dir = "Sicuri Online/IG post"
+    cover = "/src/media/Sicuri Online/IG post/Post 1/Post 1-1.png"
+    assets = [
+      "/src/media/Sicuri Online/IG post/Post 1/Post 1-1.png",
+      "/src/media/Sicuri Online/IG post/Post 1/Post 1-2.png",
+      "/src/media/Sicuri Online/IG post/Post 2/Post 2-1.png",
+      "/src/media/Sicuri Online/IG post/Post 2/Post 2-2.png",
+      "/src/media/Sicuri Online/IG post/Post 2/Post 2-3.png",
+      "/src/media/Sicuri Online/IG post/Post 3/01. Orange on black.png",
+      "/src/media/Sicuri Online/IG post/Post 3/02. Orange on black copy.png",
+      "/src/media/Sicuri Online/IG post/Post 4/Black on orange.png",
+      "/src/media/Sicuri Online/IG post/Post 4/Orange on black.png",
+      "/src/media/Sicuri Online/IG post/Post 5/Artboard 1.png",
+      "/src/media/Sicuri Online/IG post/Post 5/Artboard 2.png",
+      "/src/media/Sicuri Online/IG post/Post 5/Artboard 3.png",
+      "/src/media/Sicuri Online/IG post/Post 5/Artboard 4.png",
+      "/src/media/Sicuri Online/IG post/Post 5/Artboard 5.png",
+      "/src/media/Sicuri Online/IG post/Post 5/Artboard 6.png",
+      "/src/media/Sicuri Online/IG post/Post 5/Artboard 7.png",
+      "/src/media/Sicuri Online/IG post/Spam/Artboard 1.png",
+      "/src/media/Sicuri Online/IG post/Spam/Artboard 2.png",
+      "/src/media/Sicuri Online/IG post/Spam/Artboard 3.png",
+      "/src/media/Sicuri Online/IG post/Spam/Artboard 4.png",
+      "/src/media/Sicuri Online/IG post/Spam/Artboard 5.png",
+      "/src/media/Sicuri Online/IG post/Spam/Artboard 6.png",
+      "/src/media/Sicuri Online/IG post/Spam/Artboard 7.png"
+    ]
+  },
+  {
+    slug = "sicuri-online-logo"
+    title = "Logo"
+    source_dir = "Sicuri Online/Logo"
+    cover = "/src/media/Sicuri Online/Logo/CC Orange BG, white TXT.svg"
+    assets = [
+      "/src/media/Sicuri Online/Logo/CC Black BG, orange TXT.svg",
+      "/src/media/Sicuri Online/Logo/CC Orange BG, black TXT.svg",
+      "/src/media/Sicuri Online/Logo/CC Orange BG, white TXT.svg"
+    ]
+  }
+]
+
