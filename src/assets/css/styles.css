@@ -50,6 +50,8 @@ img {
 
 .site-header {
   padding: 28px 0;
+  position: relative;
+  z-index: 20;
 }
 
 .page {
@@ -965,6 +967,7 @@ body.has-project-back .back-bubble {
     position: absolute;
     right: 0;
     top: 60px;
+    z-index: 30;
   }
 
   .nav-open .nav-links {
