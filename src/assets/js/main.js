@@ -2,11 +2,24 @@ const nav = document.querySelector("#site-nav");
 const toggle = document.querySelector(".nav-toggle");
 
 if (nav && toggle) {
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("nav-open");
-    const isOpen = nav.classList.contains("nav-open");
+  const setNavOpen = (isOpen) => {
+    nav.classList.toggle("nav-open", isOpen);
     toggle.setAttribute("aria-label", isOpen ? "Chiudi menu" : "Apri menu");
     toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  };
+
+  toggle.addEventListener("click", () => {
+    setNavOpen(!nav.classList.contains("nav-open"));
+  });
+
+  nav.querySelectorAll(".nav-links a").forEach((link) => {
+    link.addEventListener("click", () => setNavOpen(false));
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!nav.classList.contains("nav-open")) return;
+    if (nav.contains(event.target)) return;
+    setNavOpen(false);
   });
 }
 
