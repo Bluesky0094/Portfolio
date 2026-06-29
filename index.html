@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="it">
   <head>
     <meta charset="UTF-8" />
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="src/assets/css/styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Salta al contenuto</a>
     <header class="site-header">
       <div class="container nav" id="site-nav">
         <a class="brand" href="index.html" aria-label="Homepage">
@@ -37,7 +38,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="hero">
         <div class="container hero-card">
           <div>
@@ -121,6 +122,35 @@
           </aside>
         </div>
       </section>
+
+      <section class="home-section" aria-labelledby="focus-title">
+        <div class="container">
+          <div class="section-kicker">Mobile-first portfolio</div>
+          <h2 class="section-title" id="focus-title">Percorsi rapidi per valutare competenze e output.</h2>
+          <div class="highlight-grid">
+            <a class="highlight-card" href="src/pages/index.html">
+              <span>01</span>
+              <strong>Progetti selezionati</strong>
+              <p>Una griglia compatta con anteprime, categorie e contesto del lavoro.</p>
+            </a>
+            <a class="highlight-card" href="src/pages/curriculum.html">
+              <span>02</span>
+              <strong>Curriculum</strong>
+              <p>Accesso diretto al CV, ottimizzato per consultazione rapida da smartphone.</p>
+            </a>
+            <a class="highlight-card" href="src/pages/contact.html">
+              <span>03</span>
+              <strong>Contatto immediato</strong>
+              <p>Email, telefono e link portfolio video sempre facili da raggiungere.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <nav class="mobile-quick-actions" aria-label="Azioni rapide mobile">
+        <a class="btn btn-primary" href="src/pages/index.html">Progetti</a>
+        <a class="btn btn-ghost" href="src/pages/contact.html">Contatti</a>
+      </nav>
     </main>
     <script src="src/assets/js/main.js?v=20260212-3"></script>
   </body>
