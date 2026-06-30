@@ -1,56 +1,294 @@
-# AGENTS.md - Portfolio Static Website (Codex)
+# AGENTS.md
 
-## Goal
-Build a static portfolio site (HTML/CSS/JS) that is fast, clear, and professional for studio applications. Let the work speak. Keep copy short and scannable.
+# Project: Stefano Caccamo - Portfolio
 
-## Current repo structure (do not change without updating links)
-- index.html
-- src/assets/css/styles.css
-- src/assets/js/main.js
-- src/pages/about.html
-- src/pages/contact.html
-- src/pages/index.html
-- src/pages/projects/bar-giannone-index.html
-- src/media/... (images, video, pdf)
+## Mission
 
-## Linking rules (critical to avoid broken media)
-- Always use relative paths, never leading `/`.
-- Compute paths from the current file location:
-  - From `index.html`: use `src/...`.
-  - From `src/pages/*.html`: use `../assets/...`, `../media/...`, `../../index.html`.
-  - From `src/pages/projects/*.html`: use `../../assets/...`, `../../media/...`, `../../../index.html`.
-- Navigation links must be relative to the page:
-  - In `src/pages/*.html`: `index.html`, `about.html`, `contact.html` (projects list lives at `src/pages/index.html`).
-  - In `src/pages/projects/*.html`: `../index.html`, `../about.html`, `../contact.html`, and `../../../index.html` for Home/brand.
-- If a page is moved, update every related href/src in that page.
+This website is NOT a developer portfolio.
 
-## Principles
-- Static only: no backend, no heavy build tools.
-- Speed and simplicity: small assets, fast load.
-- Scannable layout: short sections, clear CTA.
-- Credible tone: no hype.
-- Mobile-first and accessible (contrast, alt text, keyboard nav).
+Its purpose is to convince visitors that Stefano is a creative professional capable of solving communication problems through design, websites, video editing and digital solutions.
 
-## Content and layout
-- Home: hero, CTA, 3-4 highlights, featured projects, footer.
-- Projects grid: clear thumbnails + 1 line description.
-- Project detail: title, context, what I did, outputs, notes.
-- About: short profile + skills + software.
-- Contact: email, phone, external link, CTA buttons.
+The experience should feel premium, modern and memorable.
 
-## UI behavior (must be consistent across all project pages)
-- Use the shared CSS/JS: `src/assets/css/styles.css` and `src/assets/js/main.js`.
-- Cards that link directly to media (`.png/.jpg/.webp/.gif/.svg/.mp4/.webm/.ogg/.pdf`) open in the built-in modal with blur + scale animation.
-- Keep media cards as `<a class="project-card" href="...">` with a `.project-thumb` containing `<img>` or `<video>`.
-- Do not remove the modal logic from `main.js`. All project pages must include the same JS/CSS.
-- Portrait detection is automatic (JS adds `is-portrait-9-16` or `is-portrait-3-4`), so keep markup consistent to enable it.
-- Internal project pages (e.g. `src/pages/projects/*.html`) use a standard grid layout, not masonry.
-- `.media-grid` on internal project pages is responsive: 3 columns desktop, 2 columns tablet (<=900px), 1 column mobile (<=600px), with `auto-fit` behavior at smaller widths.
-- A "scroll to top" bubble button appears after scrolling down, fixed bottom-center, and smoothly scrolls to the top on click.
+The visitor should remember the website after closing it.
 
-## Quality checklist
-- All links work when opening pages as files and on static hosting.
-- All images/videos load (no 404).
-- All link load (no 404)
-- One H1 per page, alt text on images.
-- CSS/JS load on every page.
+---
+
+# Overall Direction
+
+Think less:
+
+- Bootstrap
+- Freelancer template
+- Generic portfolio
+
+Think more:
+
+- Awwwards
+- Apple
+- Linear
+- Framer
+- Studio Freight
+- Locomotive
+- Minimal Gallery
+
+The website must have personality.
+
+---
+
+# Target Audience
+
+Small businesses.
+
+Local companies.
+
+Professionals.
+
+Event organizers.
+
+People looking for someone capable of creating their digital presence.
+
+NOT developers.
+
+---
+
+# Design Principles
+
+Prioritize:
+
+• Strong typography
+
+• Excellent spacing
+
+• Large imagery
+
+• Beautiful transitions
+
+• Premium feeling
+
+• Scroll storytelling
+
+• Clean hierarchy
+
+Avoid:
+
+• Generic cards everywhere
+
+• Giant colored buttons
+
+• Material UI look
+
+• Bootstrap layouts
+
+• Too many borders
+
+• Dashboard appearance
+
+---
+
+# Personality
+
+The website should communicate:
+
+Creative.
+
+Modern.
+
+Confident.
+
+Professional.
+
+Minimal.
+
+Not flashy.
+
+Not corporate.
+
+Not childish.
+
+---
+
+# Colors
+
+Mostly neutral.
+
+Black.
+
+White.
+
+Dark gray.
+
+One accent color only if it improves the composition.
+
+Do NOT overuse gradients.
+
+---
+
+# Typography
+
+Typography should become one of the strongest visual elements.
+
+Large headings.
+
+Beautiful spacing.
+
+Elegant hierarchy.
+
+Mixing two complementary fonts is acceptable.
+
+---
+
+# Animations
+
+Animations are encouraged.
+
+Everything should feel alive.
+
+Examples:
+
+- fade reveals
+- smooth scrolling
+- parallax
+- hover transformations
+- image scaling
+- subtle motion
+
+Never animate just because it's possible.
+
+Every animation should improve perception.
+
+---
+
+# Layout
+
+Avoid repetitive sections.
+
+Every section can have a different composition.
+
+Examples:
+
+Hero
+
+↓
+
+About
+
+↓
+
+Featured Work
+
+↓
+
+Services
+
+↓
+
+Testimonials
+
+↓
+
+Contact
+
+Each section should surprise the visitor without breaking consistency.
+
+---
+
+# Portfolio
+
+The projects are the hero.
+
+Images should dominate.
+
+Avoid tiny thumbnails.
+
+Use large mockups.
+
+Interactive previews are preferred.
+
+Visitors should immediately understand the quality of the work.
+
+---
+
+# Services
+
+Services should feel premium.
+
+Not a list of skills.
+
+Instead explain value.
+
+Example:
+
+Instead of
+
+"I create websites"
+
+Think
+
+"I build websites that help businesses convert visitors into customers."
+
+---
+
+# Contact
+
+The end of the website should feel like the beginning of a conversation.
+
+Avoid a boring contact form floating on a white page.
+
+Create a memorable ending.
+
+---
+
+# Mobile
+
+Mobile is first-class.
+
+Not adapted.
+
+Designed.
+
+Every spacing and animation should work naturally on mobile.
+
+---
+
+# Performance
+
+Animations must never reduce performance.
+
+Maintain:
+
+Fast loading
+
+Responsive layout
+
+Accessibility
+
+Semantic HTML
+
+Minimal JavaScript
+
+---
+
+# Creative Freedom
+
+You are encouraged to rethink:
+
+Layouts
+
+Sections
+
+Navigation
+
+Interactions
+
+Typography
+
+Component hierarchy
+
+Content organization
+
+Do NOT simply improve the existing design.
+
+Challenge every design decision.
+
+The goal is to create the best portfolio possible while keeping the existing content and purpose.
