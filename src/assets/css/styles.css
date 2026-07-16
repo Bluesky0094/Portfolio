@@ -2,3 +2,33 @@
 @media(max-width:800px){.site-header{grid-template-columns:1fr auto}.site-nav,.header-cta{display:none}.nav-toggle{display:grid;gap:4px;width:46px;height:46px;padding:12px;border:1px solid var(--line);background:transparent}.nav-toggle span{height:1px;background:var(--paper)}.site-nav.open{position:fixed;inset:76px 0 auto;display:grid;padding:1rem;background:var(--black)}.site-nav.open a{padding:1rem;border-bottom:1px solid var(--line)}.home-hero h1{font-size:clamp(5rem,22vw,8rem)}.home-hero h1 em{margin-left:0}.hero-bottom,.section-intro,.services,.page-head,.case-story{grid-template-columns:1fr}.project-teaser,.project-teaser:nth-child(even){grid-template-columns:1fr}.project-teaser:nth-child(even) .project-image{order:0}.project-list{gap:4rem}.story-blocks section{grid-template-columns:1fr}.case-gallery{grid-template-columns:1fr}.archive-grid{grid-template-columns:1fr}}
 @media(max-width:520px){.home-hero{min-height:760px}.contact-end a{font-size:clamp(3rem,18vw,5rem)}.home-hero h1{font-size:clamp(4.5rem,25vw,7rem)}.hero-bottom{gap:1rem}.work-section,.services,.page,.case-story{padding:5rem 1rem}.project-image{aspect-ratio:4/5}.page-head h1,.case-hero h1{font-size:clamp(3.8rem,20vw,6rem)}.case-hero{padding:9rem 1rem 3rem}.case-cover{width:100%;aspect-ratio:4/5}.case-gallery{padding:0 0 5rem}.case-gallery img{height:auto;aspect-ratio:4/5}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.marquee span{animation:none}.reveal{opacity:1;transform:none;transition:none}.project-image img{transition:none}}
+
+/* Mobile navigation: editorial, full-canvas treatment. */
+@media(max-width:800px){
+  .nav-toggle{position:relative;z-index:2;place-content:center;gap:6px;transition:border-color .25s,background .25s,transform .25s}
+  .nav-toggle span{width:20px;transform-origin:center;transition:transform .25s,opacity .2s,width .25s}
+  .nav-toggle span:nth-child(2){width:14px;justify-self:end}
+  .nav-toggle[aria-expanded="true"]{border-color:var(--warm);background:var(--warm);transform:rotate(2deg)}
+  .nav-toggle[aria-expanded="true"] span{grid-area:1/1;width:20px;background:var(--black)}
+  .nav-toggle[aria-expanded="true"] span:nth-child(1){transform:rotate(45deg)}
+  .nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .nav-toggle[aria-expanded="true"] span:nth-child(3){transform:rotate(-45deg)}
+  .site-nav.open{counter-reset:portfolio-nav;inset:76px 0 0;align-content:start;gap:0;padding:clamp(1.25rem,5vw,3rem);overflow:auto;overscroll-behavior:contain;background:linear-gradient(135deg,rgba(217,102,69,.13),transparent 36%),var(--black);border-top:0}
+  .site-nav.open::before{content:"NAVIGATION / 01—04";margin:0 0 1.2rem;color:var(--warm);font-size:.62rem;letter-spacing:.18em}
+  .site-nav.open a{counter-increment:portfolio-nav;display:grid;grid-template-columns:2.5rem 1fr auto;align-items:center;min-height:clamp(4.8rem,17vw,7rem);padding:.8rem 0;border-top:1px solid var(--line);border-bottom:0;color:var(--paper);font-family:var(--serif);font-size:clamp(2rem,9vw,4.2rem);font-weight:400;letter-spacing:-.035em;text-transform:none}
+  .site-nav.open a::before{content:"0" counter(portfolio-nav);color:var(--warm);font-family:var(--sans);font-size:.58rem;letter-spacing:.12em}
+  .site-nav.open a::after{content:"↗";color:#77736e;font-family:var(--sans);font-size:1rem;transition:color .2s,transform .2s}
+  .site-nav.open a.active{font-style:italic}
+  .site-nav.open a.active::after{color:var(--warm);transform:rotate(45deg)}
+}
+@media(max-width:800px) and (max-height:650px){
+  .site-nav.open{padding:.75rem 1.25rem 1rem}
+  .site-nav.open::before{margin-bottom:.35rem;font-size:.55rem}
+  .site-nav.open a{grid-template-columns:2rem 1fr auto;min-height:3.25rem;padding:.35rem 0;font-size:clamp(1.5rem,5.5vh,2.25rem);line-height:1}
+  .site-nav.open a::before{font-size:.52rem}
+  .site-nav.open a::after{font-size:.8rem}
+}
+@media(max-width:520px){
+  .home-hero h1{max-width:none;overflow-wrap:normal;word-break:normal;font-size:clamp(3.35rem,18.5vw,5.4rem);line-height:.78;letter-spacing:-.07em}
+  .home-hero h1 em{margin-left:0}
+}
